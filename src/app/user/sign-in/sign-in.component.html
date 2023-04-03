@@ -1,0 +1,36 @@
+<div class="row">
+  <div class="col-lg-12 col-sm-12 col-md-6 mt-5">
+    <div class="d-flex justify-content-center align-items-center">
+      <div class="card col-lg-6">
+        <div class="card-header">
+          <h5>Sign In</h5>
+        </div>
+        <div class="card-bory">
+          <form [formGroup]="signInForm" (ngSubmit)="singInUser()" class="m-5">
+            <div class="mb-3">
+              <label for="email" class="label">User Email</label>
+              <input
+                formControlName="email"
+                type="email"
+                class="form-control"
+                placeholder="Email"
+              />
+            </div>
+            <div class="mb-3">
+              <label>User Password</label>
+
+              <input
+                formControlName="password"
+                type="password"
+                class="form-control"
+                placeholder="Password"
+              />
+            </div>
+
+            <button type="submit" class="btn btn-primary">Sing In!</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
